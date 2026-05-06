@@ -57,6 +57,7 @@ async function testBasicQuery() {
           // 实时打印 stderr 帮助调试
           process.stderr.write(`  [stderr] ${data}`);
         },
+        pathToClaudeCodeExecutable: require.resolve("@anthropic-ai/claude-code/bin/claude.exe"),
       },
     });
 
@@ -132,6 +133,7 @@ async function testAbort() {
         stderr: (data: string) => {
           process.stderr.write(`  [stderr] ${data}`);
         },
+        pathToClaudeCodeExecutable: require.resolve("@anthropic-ai/claude-code/bin/claude.exe"),
       },
     });
 

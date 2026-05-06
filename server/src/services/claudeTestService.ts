@@ -132,6 +132,7 @@ export async function testClaudeConnection(opts: {
         permissionMode: "bypassPermissions",
         allowDangerouslySkipPermissions: true,
         abortController: controller,
+        pathToClaudeCodeExecutable: require.resolve("@anthropic-ai/claude-code/bin/claude.exe"),
         env,
         stderr: (data: string) => { stderrOutput += data; },
       },

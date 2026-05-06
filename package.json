@@ -8,6 +8,9 @@
     "lint": "pnpm --filter \"*\" lint",
     "format": "prettier --write \"**/*.{ts,tsx,json,css}\""
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "node-pty"]
+  },
   "devDependencies": {
     "concurrently": "^9.1.0",
     "prettier": "^3.4.0",

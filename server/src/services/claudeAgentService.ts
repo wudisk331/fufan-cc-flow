@@ -118,6 +118,9 @@ export class ClaudeAgentService extends EventEmitter {
           });
         },
 
+        // Claude Code 可执行文件路径（Windows 下需使用 native binary）
+        pathToClaudeCodeExecutable: require.resolve("@anthropic-ai/claude-code/bin/claude.exe"),
+
         // 环境变量
         env,
 
